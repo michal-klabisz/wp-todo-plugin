@@ -1,0 +1,150 @@
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+	0. 	Font Import
+	1. 	Plugin Base
+    2.  Wrappers
+    3.  Rows
+    4.  Inputs
+    5.  Other Elements
+
+----------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*	0. Font Import
+/* -------------------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+/* -------------------------------------------------------------------------- */
+/*	1. Plugin Base
+/* -------------------------------------------------------------------------- */
+
+.mk-todo-plugin-settings {
+    width: 30%;
+    font-size: 0.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    display: block;
+    margin: 10% auto;
+    background: #f4f1f1;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 1px 0px 0px rgba(166,166,166,1);
+    -moz-box-shadow: 0px 1px 0px 0px rgba(166,166,166,1);
+    box-shadow: 0px 1px 0px 0px rgba(166,166,166,1);
+}
+
+@media (max-width: 800px) {
+    .mk-todo-plugin-settings {
+        width: 60%;
+    }
+}
+
+@media (max-width: 515px) {
+    .mk-todo-plugin-settings {
+        width: 95%;
+    }
+}
+
+.mk-todo-list {
+    font-size: 1.4em;
+    background-color: #ffffff;
+}
+
+.mk-todo-list .add-new-task {
+    background: #f3f3f3;
+}
+
+/* -------------------------------------------------------------------------- */
+/*	2. Wrappers
+/* -------------------------------------------------------------------------- */
+
+.mk-todo-list .checkbox-wrapper {
+    padding: 0.5rem;
+    margin-right: 0.2rem;
+    border-right: 1px solid #e6ebed;
+    align-items: center;
+    display: flex;
+}
+
+.mk-todo-list .editable-label-wrapper,
+.mk-todo-list .new-todo-input-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 0.4rem;
+    width: 100%;
+    border-left: 1px solid #e6ebed;
+}
+
+.mk-todo-list .editable-label-wrapper:hover {
+    cursor: pointer;
+}
+
+/* -------------------------------------------------------------------------- */
+/*	3. Rows
+/* -------------------------------------------------------------------------- */
+
+.mk-todo-list .row {
+    margin: 0;
+    padding: 0;
+    border: 1px solid #e6ebed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* -------------------------------------------------------------------------- */
+/*	4. Inputs
+/* -------------------------------------------------------------------------- */
+
+.mk-todo-list .label-wrapper input::placeholder {
+    color: #c0c6d2;
+}
+
+.mk-todo-list .label-wrapper input {
+    border: 0;
+    color: #8b8f97;
+    background: transparent;
+    font-size: 0.7rem;
+    padding: 0;
+}
+
+.mk-todo-list .new-todo-input-wrapper input {
+    width: 100%;
+}
+
+.mk-todo-list .editable-label-wrapper input {
+    width: 80%;
+}
+
+.mk-todo-list .edit-todo-input {
+    display: none;
+}
+
+.mk-todo-list .checkbox-wrapper [type=checkbox] {
+    margin: 0 -0.1rem -0.1rem 0;
+    border-radius: 1px;
+}
+
+.mk-todo-list .checkbox-wrapper [type=checkbox]:checked {
+    margin: 0 -0.1rem -0.1rem 0;
+    border: 1px solid ;
+}
+
+/* -------------------------------------------------------------------------- */
+/*	4. Other Elements
+/* -------------------------------------------------------------------------- */
+
+.mk-todo-list .editable-label-wrapper span {
+    visibility: hidden;
+}
+
+.mk-todo-list .editable-label-wrapper:hover span {
+    visibility: visible;
+}
+
+.mk-todo-list .editable-label-wrapper label {
+    word-break: break-word;
+}

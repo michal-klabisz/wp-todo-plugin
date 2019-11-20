@@ -1,0 +1,53 @@
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+	0. 	Font Import
+	1. 	Plugin Base
+
+----------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*	0. Font Import
+/* -------------------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+/* -------------------------------------------------------------------------- */
+/*	1. Plugin Base
+/* -------------------------------------------------------------------------- */
+
+.mk-todo-plugin-settings {
+    width: 100%;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    display: block;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 1px 0px 0px rgba(166,166,166,1);
+    -moz-box-shadow: 0px 1px 0px 0px rgba(166,166,166,1);
+    box-shadow: 0px 1px 0px 0px rgba(166,166,166,1);
+}
+
+.mk-todo-list {
+    font-size: 1.4em;
+    background-color: #ffffff;
+}
+
+.mk-todo-list .row {
+    margin: 0;
+    padding: 2%;
+    border: 1px solid #e6ebed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mk-todo-list span {
+    word-break: break-word;
+}
+
+.mk-todo-list .done {
+    text-decoration: line-through;
+}
